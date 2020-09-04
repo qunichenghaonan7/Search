@@ -12,17 +12,13 @@ struct SearchDetailView: View {
     
     @ObservedObject var store = SearchStore()
     
-    let config = SearchBar.SearchBarConfig(showIcon: false, editEnable: true, placeholder: "Input to Search", autoEdit: false)
+    let config = SearchBar.SearchBarConfig(showIcon: false, placeholder: "Input to Search")
     
     var body: some View {
         VStack {
-            //只有在From中时，更改config.autoEdite值为true，才能自动弹起键盘，否则会崩溃，猜测是目前swiftUI版本 bug
-//            Form {
-//                SearchBar(text: $store.searchState.tfProperty.searchText, config: config)
-//                .padding(.horizontal, 5)
-//            }
-            SearchBar(text: $store.searchState.tfProperty.searchText, config: config)
-                .padding(.horizontal, 5)
+            SearchBar(store: store, config: config)
+                .padding(.horizontal, 15)
+                .padding(.top, 10)
             if store.searchState.tfProperty.searchText.isEmpty {
                 Spacer()
             } else if store.searchState.list.isEmpty {

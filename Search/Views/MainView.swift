@@ -10,19 +10,21 @@ import SwiftUI
 
 struct MainView: View {
     @State var showDetail = false
-    @State var contentString = ""
-    let config = SearchBar.SearchBarConfig(showIcon: true, editEnable: false, placeholder: "Tap here to Search",autoEdit: false)
+    let config = SearchBar.SearchBarConfig(showIcon: true, placeholder: "Tap here to Search")
     
     var body: some View {
         
         VStack {
-            Button(action: {
+            ZStack {
+                SearchBar(config: config)
+                RoundedRectangle(cornerRadius: 5)
+                    .fill(Color.clear)
+            }
+            .frame(height: 36, alignment: .leading)
+            .padding(.horizontal, 20)
+            .onTapGesture {
                 self.showDetail.toggle()
-            }, label: {
-                SearchBar(text: $contentString, config: config)
-                    .padding(.horizontal, 10)
-            })
-
+            }
             Spacer()
         }
             .sheet(isPresented: $showDetail) {

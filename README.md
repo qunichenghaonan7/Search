@@ -1,21 +1,22 @@
 # Search
 SwiftUI
 
+因目前设备性能问题，暂无法更新到SwiftUI 2.0版本，所以很多控件无法使用性能更好的，且暂未找到UIKit中基础的功能（键盘自动弹起等），因是纯SwiftUI Demo，所以删除了UIKit转SwiftUI的部分
+在实际项目中更换版本可使用性能更好，bug更少的控件
+
 ---
 
 ## UI部分
 ---
 ### 主页面
-包含一个navigationTitle，一个类似UISearchBar的按钮，所以采用了封装UISearchBar-->View的方式封装
+包含一个navigationTitle，一个类似UISearchBar的按钮
 1、因SwiftUI目前版本navigationLink到第二页面，即使隐藏了navigationBar，但其frame仍存在，所以采用sheet的形式弹出详情页
-2、推测是SwiftUI 1.0版本的bug，封装的UISearchBar,UItextField等，只有在被Form持有时，才可以设置自动弹起键盘，否则会崩溃，所以停用了自动弹起键盘
 
 ### 搜索详情页
 包含一个SearchBar，一个列表及无数据时No Result的Text
-因目前设备性能问题，暂无法更新到SwiftUI 2.0版本，所以很多空间无法使用性能更好的，在实际项目中更换设备可使用性能更好，bug更少的控件
 
 ### SearchBar
-封装的UISearchBar
+通过TextField+Image来实现
 
 ### SeachCell
 搜索列表详细UI

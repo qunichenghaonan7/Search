@@ -48,6 +48,9 @@ private extension SearchStore {
         case .textFieldValueChanged:
             appCommand = SearchCommand(text: state.tfProperty.searchText)
             break
+        case .textFieldClean:
+            state.tfProperty.searchText = ""
+            break
         case .resultListUpdate(list: let list):
             state.list = list
             break

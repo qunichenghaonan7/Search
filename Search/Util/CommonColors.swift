@@ -16,6 +16,7 @@ enum CommonColors: Int {
     case cA5A5A5 = 0xA5A5A5
     case c6C91F2 = 0x6C91F2
     case cF5F8FE = 0xF5F8FE
+    case cE9EAEC = 0xE9EAEC
 }
 
 extension Color {

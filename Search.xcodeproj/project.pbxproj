@@ -25,9 +25,9 @@
 		67460B5F24FCFAE700931695 /* SearchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67460B5E24FCFAE700931695 /* SearchAction.swift */; };
 		67460B6124FCFD1D00931695 /* SearchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67460B6024FCFD1D00931695 /* SearchCommand.swift */; };
 		67460B6324FCFD9B00931695 /* SearchOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67460B6224FCFD9B00931695 /* SearchOperator.swift */; };
+		67E028C125021B2C00BB6FF0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E028C025021B2C00BB6FF0 /* SearchBar.swift */; };
 		67E1CE1C2501E7B100892516 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1CE1B2501E7B000892516 /* CoreData.framework */; };
 		67EBFA45250094FB00113ED1 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EBFA44250094FB00113ED1 /* SearchCell.swift */; };
-		67EBFA4725009C1600113ED1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EBFA4625009C1600113ED1 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +51,9 @@
 		67460B5E24FCFAE700931695 /* SearchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAction.swift; sourceTree = "<group>"; };
 		67460B6024FCFD1D00931695 /* SearchCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCommand.swift; sourceTree = "<group>"; };
 		67460B6224FCFD9B00931695 /* SearchOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOperator.swift; sourceTree = "<group>"; };
+		67E028C025021B2C00BB6FF0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		67E1CE1B2501E7B000892516 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		67EBFA44250094FB00113ED1 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
-		67EBFA4625009C1600113ED1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 				674182FF24FCF57D00752AEC /* MainView.swift */,
 				67460B5724FCF7AF00931695 /* SearchDetailView.swift */,
 				67EBFA44250094FB00113ED1 /* SearchCell.swift */,
-				67EBFA4625009C1600113ED1 /* SearchBar.swift */,
+				67E028C025021B2C00BB6FF0 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,9 +245,9 @@
 				674182E924FCF45B00752AEC /* AppDelegate.swift in Sources */,
 				67460B5F24FCFAE700931695 /* SearchAction.swift in Sources */,
 				674182F024FCF45B00752AEC /* ContentView.swift in Sources */,
-				67EBFA4725009C1600113ED1 /* SearchBar.swift in Sources */,
 				67460B5824FCF7AF00931695 /* SearchDetailView.swift in Sources */,
 				67460B6324FCFD9B00931695 /* SearchOperator.swift in Sources */,
+				67E028C125021B2C00BB6FF0 /* SearchBar.swift in Sources */,
 				6741830024FCF57D00752AEC /* MainView.swift in Sources */,
 				672654FF250203D30027D169 /* CommonColors.swift in Sources */,
 				674182EB24FCF45B00752AEC /* SceneDelegate.swift in Sources */,
