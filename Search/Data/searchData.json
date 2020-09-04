@@ -1,0 +1,12 @@
+{"code":200,"data":{"sections":[{
+    "list": [
+        {"id":1,"name":"V11","stockStatus":true,"price":"599.99"},
+        {"id":2,"name":"V10","stockStatus":false,"price":"399.99"}
+    ], "title": "Vacuum"
+},
+{
+    "list": [
+        {"id":3,"name":"Supersonic","stockStatus":true,
+            "price":"399.99"}], "title": "Hair Dryer"
+}]}}
+
